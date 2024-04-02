@@ -16,15 +16,16 @@ import { React, useState } from 'react';
 //     }
 // }
 
-const MarkdownPreviewer= (() =>  (
-    <>
+function MarkdownPreviewer() {
+    return <>
         <textarea id="editor"></textarea>
         <div id="preview"></div>"
         
     </>
+}
     
 
     
-));
+
 
 export default MarkdownPreviewer

@@ -4,22 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MarkdownPreviewer from './Components/MarkdownPreviewer'
 
+//Next step will be to initialize state with the value of the textarea field. 
+//Then this text will be passed to preview element via props
+//Must import Marked library for parsing markdown.
 
-class App extends Component {
-  constructor(props) {
-    super(props)
 
-
-  }
-  
-  render() {
-
+function App() {
     return (
-      <>
-        <MarkdownPreviewer />
-      </>
-  )
-  }
+     <>
+        <textarea id="editor"></textarea>
+        <p id="preview">Tada</p>
+     </>
+    )
 }
 
 export default App
