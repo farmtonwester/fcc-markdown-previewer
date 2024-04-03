@@ -2,6 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import ReactMarkdown from 'react-markdown';
 
+//Next step will be to initialize state with the value of the textarea field. 
+//Then this text will be passed to preview element via props
+//Must import Marked library for parsing markdown.
+
 const defaultMarkdown = `
 # Welcome to my React Markdown Previewer!
 
@@ -38,6 +42,9 @@ There's also [links](https://www.freecodecamp.com), and
 function App() {
     const [markdownText, setMarkdownText] = useState(defaultMarkdown);
     
+   
+    
+
     return (
      <>
         <h1>Markdown Previewer</h1>
@@ -50,5 +57,6 @@ function App() {
      </>
     )
 }
+
 
 export default App
